@@ -1,0 +1,19 @@
+h2 {
+    color: green;
+}
+
+.boxmodel {
+    border: 5px solid green ;
+    display: inline-block;
+    padding: 5px 10px 15px 20px;
+    margin: 0px 20px;
+}
+p {
+    font-size: 20px;
+    font-family: 'Lucida Sans','sans-serif';
+
+    line-height: 10px;
+}
+span {
+    font-size: 5em;
+}

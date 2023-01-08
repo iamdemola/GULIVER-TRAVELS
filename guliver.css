@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-color: pink;
+    --primary-color: rgb(37, 102, 155);
+    --btn-color: rgb(233, 173, 95);
+    --bg1-color: rgba(39, 37, 37, 0.925);
+    --bg2-color: azure;
+    --bg3-color: rgb(61, 137, 199);
+}
+
+body {
+    background-color: rgba(235, 233, 233, 0.781);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    line-height: 1.5;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg2-color);
+}
+a:hover {
+    color: var(--btn-color);
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid var(--btn-color);
+    transition: ease-in 0.3s;
+}
+
+li {
+    list-style: none;
+    padding: 0 10px;
+    margin: 5px;
+}
+
+span {
+    color: var(--btn-color);
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+span:hover {
+      transition: ease-in 1s;
+}
+
+img {
+    width: 100%;
+}
+form {
+    display: block;
+    padding: 12px 8px;
+    text-align: center;
+    width: 100%;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: right;
+}
+
+input, select {
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+form input:nth-of-type(3) {
+    grid-column: 1 / span 2;
+}
+
+form select {
+    grid-column: 1 / span 2;
+}
+
+form button {
+    grid-column: 1;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 15px;
+    background: var(--btn-color);
+    color: azure;
+    border-radius: 0;
+    border: none; 
+}
+
+/* utilities */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 30px;
+    margin: 20px;
+    background: rgba(233, 173, 95, 0.8);
+    border-radius: 20px;
+    box-shadow: 3px 0 6px rgb(61, 61, 61);
+}
+
+.btn {
+    padding: 15px 20px;
+    margin: 15px auto;
+    font-size: 15px;
+    background: var(--btn-color);
+    color: azure;
+    border-radius: 0;
+    border: none;
+}
+
+.btn:hover {
+    background: none;
+    color: var(--btn-color);
+    font-weight: bold;
+    padding:15px 23px;
+    border: 2px solid var(--btn-color);
+}
+
+nav {
+    background: var(--primary-color);
+    padding: 15px 30px;
+}
+
+.logo {
+    justify-self: flex-start;
+    flex: 1;
+    color: var(--btn-color);
+    max-width: 200px;
+    min-width: 130px;
+}
+
+nav ul {
+    flex: 2;
+    text-align: end;
+}
+#search {
+    color: white;
+    background: var(--primary-color);
+    border-radius: 15px;
+    border: 2px solid var(--btn-color);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.header-content {
+    background: var(--bg2-color);
+    padding:40px 20px 20px;
+    margin: 0 auto 40px;
+}
+
+.text-wrapper {
+    max-width: 45%;
+    text-align: start;
+    padding: 15px;
+}
+
+.text-wrapper h1 {
+    margin: 10px auto;
+}
+
+.text-wrapper p {
+    margin: 10px auto 30px;
+}
+
+
+.img-wrapper {
+    max-width: 45%;
+}
+
+.img-wrapper img {
+    border-radius: 20px;
+}
+
+.explore .text-wrapper {
+    text-align: end;
+}
+.explore {
+    padding:40px 20px 20px;
+}
+
+.box {
+    background: var(--bg1-color);
+    align-items: center;
+    text-align: center;
+    margin:20px 30px;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+footer h2 {
+    color: var(--btn-color);
+    
+}
+.footer-bottom {
+    text-align: center;
+}
+
+
+@media (max-width:765px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        background-color: var(--primary-color);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo {
+        
+        color: var(--btn-color);
+        max-width: 200px;
+        min-width: 140px;
+    }
+    
+}
